@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary-front-development-bg: #fec89a;
+    --primary--ui-ux-bg: #d8e2dc;
+    --primary-ui-ux-research-bg: #d8e2dc;
+    --primary-results-bg: #e4e4e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #efebe8;
+    color: #292929;
+    padding: 0 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 1200px;
+    height: 100%;
+    margin: 3rem auto;
+    box-shadow: 0px 5px 19px 0px rgba(211, 211, 211, 1);
+
+}
+
+.card-content {
+    border: 1px solid #efebe8;
+    border-radius: 8px;
+    margin: 3rem 0 2rem 0;
+    padding: 1.5rem 2rem;
+}
+
+.card-info,
+.card-info-default {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+}
+
+.card-info:hover {
+    cursor: pointer;
+    background: #efefef;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.2rem;
+}
+
+.main-title h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.main-title p {
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.main-title span {
+    background: var(--primary-results-bg);
+    padding: 0.2rem 0.7rem;
+    border-radius: 15px;
+}
+
+.default,
+.department,
+.phone,
+.email {
+    color: #626262;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-bottom: 1.2rem;
+}
+
+.full-name,
+.front-dev,
+.ui-ux,
+.research,
+.contact-phone,
+.contact-email {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.front-dev {
+    background: var(--primary-front-development-bg);
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0.2rem 0;
+}
+
+.ui-ux {
+    background: var(--primary--ui-ux-bg);
+    padding: 0.2rem 0.6rem;
+    width: 70px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0.2rem 0;
+}
+
+.research {
+    background: var(--primary-results-bg);
+    padding: 0.2rem 0.6rem;
+    width: 150px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0.2rem 0;
+}
